@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Categories />
-      <div  className='parent'>
+      <div  className='parents'>
         <SubCategory />
         <Node />
       </div>

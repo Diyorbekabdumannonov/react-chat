@@ -1,16 +1,20 @@
 .node {
     flex: 7;
-    background-image: url(./Screenshot\ \(59\).png);
-    background-repeat: no-repeat;
+    /* background-image: url(./Screenshot\ \(59\).png); */
+    /* background-repeat: no-repeat;
     object-fit: contain;
-    background-size: cover;
+    background-size: cover; */
     position: relative;
     color: white;
 }
 
 form {
     position: absolute;
-    bottom:0;
+    bottom: 0;
+}
+
+.date {
+    margin-top: auto;
 }
 
 .input {
@@ -20,9 +24,37 @@ form {
     padding-right: 18px;
     padding: 16px;
     border: none;
+    position: relative;
     outline: none;
-    width: 730px;
+    width: 76vw;
     border-radius: 5px 5px 0 0;
+}
+
+.hidden {
+    position: absolute;
+    margin-left: -40px;
+    background-color: transparent;
+    color: rgb(18, 18, 157);
+    font-weight: 900;
+    font-size: 30px;
+    border: none;
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
+    display: none;
+}
+
+.visible {
+    position: absolute;
+    margin-left: -40px;
+    background-color: transparent;
+    color: rgb(18, 18, 157);
+    font-weight: 900;
+    font-size: 30px;
+    border: none;
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
 }
 
 .message {
@@ -50,7 +82,7 @@ form {
 }
 
 #node {
-    height: 500px;
+    height: 465px;
     overflow-y: auto;
 }
 
