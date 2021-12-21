@@ -1,0 +1,23 @@
+.subcategory {
+    flex: 2;
+}
+
+.parent{    
+    height: 500px;
+    overflow-y: auto;
+}
+
+.card2{
+    border: 1px outset black;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.stext{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.card2:hover{
+    background-color: #eee;
+}

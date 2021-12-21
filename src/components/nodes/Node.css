@@ -1,0 +1,61 @@
+.node {
+    flex: 7;
+    background-image: url(./Screenshot\ \(59\).png);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+form {
+    position: absolute;
+    bottom:0;
+}
+
+.input {
+    background-color: black;
+    color: white;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding: 16px;
+    border: none;
+    outline: none;
+    width: 730px;
+    border-radius: 5px 5px 0 0;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    margin-left: auto;
+}
+
+.box {
+    background-color: rgba(1, 22, 66, 0.3);
+    border-radius: 10px;
+    padding: 5px;
+    min-width: 300px;
+    max-width: 600px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.text {
+    font-size: 18px;
+}
+
+#node {
+    height: 500px;
+    overflow-y: auto;
+}
+
+.person {
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+  <title>React App</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script>
+    import { initializeApp } from "firebase/app";
+    import { getAnalytics } from "firebase/analytics";
+    const firebaseConfig = {
+      apiKey: "AIzaSyBNJ8jUSmbNfteno3Suv2aPl-6qitMyd0c",
+      authDomain: "react-chat-f1fb6.firebaseapp.com",
+      databaseURL: "https://react-chat-f1fb6-default-rtdb.firebaseio.com",
+      projectId: "react-chat-f1fb6",
+      storageBucket: "react-chat-f1fb6.appspot.com",
+      messagingSenderId: "597446268644",
+      appId: "1:597446268644:web:9d214c9467e5e15df7fef1",
+      measurementId: "G-W5EPNJ7J8Q"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const db = firebase.firestore();
+    db.settings({ timestampInSnapshot: true })
+  </script>
+  <script src="../src/App.js"></script>
+</body>
+
+</html>

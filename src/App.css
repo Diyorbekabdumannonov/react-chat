@@ -1,0 +1,9 @@
+
+
+.parents {
+  display: flex;
+  width: 1000px;
+  overflow-y: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
