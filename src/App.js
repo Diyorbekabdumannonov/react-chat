@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Categories />
-      <div display="flex" >
+      <div  className='parent'>
         <SubCategory />
         <Node />
       </div>
