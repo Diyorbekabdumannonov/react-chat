@@ -1,6 +1,9 @@
 .container {
     display: flex;
     overflow-x: auto;
+    padding: 5px;
+    scrollbar-track-color: red;
+    scrollbar-color: black;
 }
 
 .logo {

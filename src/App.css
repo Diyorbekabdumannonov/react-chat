@@ -1,3 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.all {
+  background-color: black;
+  color: white;
+}
+
 .parents {
   display: flex;
   overflow-y: hidden;

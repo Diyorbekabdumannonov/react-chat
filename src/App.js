@@ -5,13 +5,13 @@ import SubCategory from './components/subCatecory/SubCategory';
 
 function App() {
   return (
-    <>
+    < div className='all'>
       <Categories />
       <div className='parents'>
         <SubCategory />
         <Node />
       </div>
-    </>
+    </div>
   );
 }
 

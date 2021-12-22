@@ -14,7 +14,9 @@ form {
 }
 
 .date {
-    margin-top: auto;
+    position: absolute;
+    bottom: 4px;
+    right: 5px;
 }
 
 .input {
@@ -26,8 +28,9 @@ form {
     border: none;
     position: relative;
     outline: none;
-    width: 76vw;
-    border-radius: 5px 5px 0 0;
+    overflow-x: hidden;
+    width: 79vw;
+    box-shadow: 0 1px 1px 1px white;
 }
 
 .hidden {
@@ -45,9 +48,9 @@ form {
 }
 
 .visible {
+    background-color: #000;
     position: absolute;
     margin-left: -40px;
-    background-color: transparent;
     color: rgb(18, 18, 157);
     font-weight: 900;
     font-size: 30px;
@@ -68,6 +71,9 @@ form {
     background-color: rgba(1, 22, 66, 0.3);
     border-radius: 10px;
     padding: 5px;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
     min-width: 300px;
     max-width: 600px;
     margin: 10px;
@@ -79,6 +85,7 @@ form {
 
 .text {
     font-size: 18px;
+    margin-bottom: 3px;
 }
 
 #node {
