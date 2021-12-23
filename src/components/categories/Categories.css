@@ -1,10 +1,10 @@
-.container {
+/* .container {
     display: flex;
     overflow-x: auto;
     padding: 5px;
     scrollbar-track-color: red;
     scrollbar-color: black;
-}
+} */
 
 .logo {
     width: 30px;
@@ -12,7 +12,7 @@
     border-radius: 50px;
     object-fit: cover;
 }
-
+/*
 .card {
     display: flex;
     flex-direction: column;
@@ -46,4 +46,4 @@ h3 {
     padding-right: 15px;
     padding-top: 3px;
     padding-bottom: 3px;
-}
+} */
