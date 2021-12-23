@@ -1,9 +1,6 @@
-.node {
+/* .node {
     flex: 7;
-    /* background-image: url(./Screenshot\ \(59\).png); */
-    /* background-repeat: no-repeat;
     object-fit: contain;
-    background-size: cover; */
     position: relative;
     color: white;
 }
@@ -92,7 +89,7 @@ form {
     height: 465px;
     overflow-y: auto;
 }
-
+*/
 .person {
     border-radius: 50px;
     width: 30px;
