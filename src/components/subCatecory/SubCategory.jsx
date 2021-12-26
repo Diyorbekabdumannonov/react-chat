@@ -1,26 +1,33 @@
+import { Link } from '@material-ui/core'
 import './SubCategory.css'
 
 export default function SubCategory() {
     return (
-        <div className='w-25 overflow-auto scroll' style={{ height: '552px' }}>
+        <div className='overflow-auto scroll' style={{ height: '100vh' }}>
             <div className=''>
-                <div className="card2"><h3 className="border border-1 border-dark fs-4 px-3 py-3 mb-0">Family</h3></div>
-                <div className="card2"><h3 className="border border-1 border-dark fs-4 px-3 py-3 mb-0">Family</h3></div>
-                <div className="card2"><h3 className="border border-1 border-dark fs-4 px-3 py-3 mb-0">Family</h3></div>
-                <div className="card2"><h3 className="border border-1 border-dark fs-4 px-3 py-3 mb-0">Family</h3></div>
-                <div className="card2"><h3 className="border border-1 border-dark fs-4 px-3 py-3 mb-0">Family</h3></div>
-                <div className="card2"><h3 className="border border-1 border-dark fs-4 px-3 py-3 mb-0">Family</h3></div>
-                <div className="card2"><h3 className="border border-1 border-dark fs-4 px-3 py-3 mb-0">Family</h3></div>
-                <div className="card2"><h3 className="border border-1 border-dark fs-4 px-3 py-3 mb-0">Family</h3></div>
-                <div className="card2"><h3 className="border border-1 border-dark fs-4 px-3 py-3 mb-0">Family</h3></div>
-                <div className="card2"><h3 className="border border-1 border-dark fs-4 px-3 py-3 mb-0">Family</h3></div>
-                <div className="card2"><h3 className="border border-1 border-dark fs-4 px-3 py-3 mb-0">Family</h3></div>
-                <div className="card2"><h3 className="border border-1 border-dark fs-4 px-3 py-3 mb-0">Family</h3></div>
-                <div className="card2"><h3 className="border border-1 border-dark fs-4 px-3 py-3 mb-0">Family</h3></div>
-                <div className="card2"><h3 className="border border-1 border-dark fs-4 px-3 py-3 mb-0">Family</h3></div>
-                <div className="card2"><h3 className="border border-1 border-dark fs-4 px-3 py-3 mb-0">Family</h3></div>
-                <div className="card2"><h3 className="border border-1 border-dark fs-4 px-3 py-3 mb-0">Family</h3></div>
-                <div className="card2"><h3 className="border border-1 border-dark fs-4 px-3 py-3 mb-0">Family</h3></div>
+                <div class="card2 border border-dark border-1 py-1"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover text-white fs-4 px-3 py-3 mb-0 MuiTypography-colorPrimary">Family</a></div>
+                <div class="card2 border border-dark border-1 py-1"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover text-white fs-4 px-3 py-3 mb-0 MuiTypography-colorPrimary">Family</a></div>
+                <div class="card2 border border-dark border-1 py-1"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover text-white fs-4 px-3 py-3 mb-0 MuiTypography-colorPrimary">Family</a></div>
+                <div class="card2 border border-dark border-1 py-1"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover text-white fs-4 px-3 py-3 mb-0 MuiTypography-colorPrimary">Family</a></div>
+                <div class="card2 border border-dark border-1 py-1"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover text-white fs-4 px-3 py-3 mb-0 MuiTypography-colorPrimary">Family</a></div>
+                <div class="card2 border border-dark border-1 py-1"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover text-white fs-4 px-3 py-3 mb-0 MuiTypography-colorPrimary">Family</a></div>
+                <div class="card2 border border-dark border-1 py-1"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover text-white fs-4 px-3 py-3 mb-0 MuiTypography-colorPrimary">Family</a></div>
+                <div class="card2 border border-dark border-1 py-1"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover text-white fs-4 px-3 py-3 mb-0 MuiTypography-colorPrimary">Family</a></div>
+                <div class="card2 border border-dark border-1 py-1"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover text-white fs-4 px-3 py-3 mb-0 MuiTypography-colorPrimary">Family</a></div>
+                <div class="card2 border border-dark border-1 py-1"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover text-white fs-4 px-3 py-3 mb-0 MuiTypography-colorPrimary">Family</a></div>
+                <div class="card2 border border-dark border-1 py-1"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover text-white fs-4 px-3 py-3 mb-0 MuiTypography-colorPrimary">Family</a></div>
+                <div class="card2 border border-dark border-1 py-1"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover text-white fs-4 px-3 py-3 mb-0 MuiTypography-colorPrimary">Family</a></div>
+                <div class="card2 border border-dark border-1 py-1"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover text-white fs-4 px-3 py-3 mb-0 MuiTypography-colorPrimary">Family</a></div>
+                <div class="card2 border border-dark border-1 py-1"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover text-white fs-4 px-3 py-3 mb-0 MuiTypography-colorPrimary">Family</a></div>
+                <div class="card2 border border-dark border-1 py-1"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover text-white fs-4 px-3 py-3 mb-0 MuiTypography-colorPrimary">Family</a></div>
+                <div class="card2 border border-dark border-1 py-1"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover text-white fs-4 px-3 py-3 mb-0 MuiTypography-colorPrimary">Family</a></div>
+                <div class="card2 border border-dark border-1 py-1"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover text-white fs-4 px-3 py-3 mb-0 MuiTypography-colorPrimary">Family</a></div>
+                <div class="card2 border border-dark border-1 py-1"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover text-white fs-4 px-3 py-3 mb-0 MuiTypography-colorPrimary">Family</a></div>
+                <div class="card2 border border-dark border-1 py-1"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover text-white fs-4 px-3 py-3 mb-0 MuiTypography-colorPrimary">Family</a></div>
+                <div class="card2 border border-dark border-1 py-1"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover text-white fs-4 px-3 py-3 mb-0 MuiTypography-colorPrimary">Family</a></div>
+                <div class="card2 border border-dark border-1 py-1"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover text-white fs-4 px-3 py-3 mb-0 MuiTypography-colorPrimary">Family</a></div>
+                <div class="card2 border border-dark border-1 py-1"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover text-white fs-4 px-3 py-3 mb-0 MuiTypography-colorPrimary">Family</a></div>
+                <div class="card2 border border-dark border-1 py-1"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover text-white fs-4 px-3 py-3 mb-0 MuiTypography-colorPrimary">Family</a></div>
             </div>
         </div>
     )

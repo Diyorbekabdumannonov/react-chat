@@ -95,3 +95,33 @@ form {
     width: 30px;
     height: 30px;
 }
+
+#node {
+    margin-left: auto;
+    text-align: end;
+    height: 91vh;
+    overflow-y: auto;
+}
+
+#node::-webkit-scrollbar {
+    width: 0.1px;
+    height: 0.1px
+}
+
+#node::-webkit-scrollbar-button {
+    background: transparent
+}
+
+#node::-webkit-scrollbar-track-piece {
+    background: transparent
+}
+
+#node::-webkit-scrollbar-thumb {
+    background: transparent
+}
+
+.send {
+    margin-left: -40px;
+    margin-top: 11px;
+    cursor: pointer;
+}

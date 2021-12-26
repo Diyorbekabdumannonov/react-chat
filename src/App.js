@@ -6,11 +6,11 @@ import SubCategory from './components/subCatecory/SubCategory';
 function App() {
   return (
     < div className='all'>
-      <Categories />
-      <div className='parents'>
+      <div className='sidebar'>
+        <Categories />
         <SubCategory />
-        <Node />
       </div>
+      <Node className='rightbar'/>
     </div>
   );
 }
