@@ -41,3 +41,11 @@
 .scroll::-webkit-scrollbar-thumb {
     background:transparent
 }
+
+.card2:hover{
+    background-color: #222;
+}
+
+.card2:active{
+    background-color: #222;
+}
