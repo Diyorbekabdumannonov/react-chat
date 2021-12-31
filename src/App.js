@@ -8,19 +8,27 @@ function App() {
   return (
     <>
       <div className='all'>
-        <div className='sidebar'>
-          <Categories />
-          <SubCategory />
-        </div>
-        <Node className='rightbar' />
+        <BrowserRouter>
+          <Routes>
+            <Route element={
+              <>
+                <div className='sidebar'>
+                  <Categories />
+                  <SubCategory />
+                </div>
+                <Node className='rightbar' />
+              </>} path='/' exact></Route>
+            <Route path='menu' element={
+              <>
+                <div className='sidebar-mobile'>
+                  <Categories className='category-mobile' />
+                  <SubCategory className='subcategory-mobile' />
+                </div>
+              </>
+            } component={<Categories />}></Route>
+          </Routes>
+        </BrowserRouter>
       </div>
-
-      {/* <BrowserRouter>
-        <Routes>
-          <Route path="/menu" component={<Categories />} />
-        </Routes>
-      </BrowserRouter> */}
-
     </>
   );
 }

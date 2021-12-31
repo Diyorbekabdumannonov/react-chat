@@ -8,9 +8,15 @@
   color: white;
   height: 100vh;
   display: flex;
-  overflow: hidden;
+  /* overflow: hidden; */
   max-width: 1366px;
+  width: 100%;
   max-height: 900px;
+}
+
+.sidebar-mobile {
+  width: 100%;
+  display: block;
 }
 
 .sidebar {
@@ -25,7 +31,6 @@ nav {
   width: 20%;
 }
 
-
 @media (max-width:992px) {
   nav {
     width: 0;
@@ -39,5 +44,11 @@ nav {
 @media(min-width:1400px) {
   .all {
     margin: auto;
+  }
+}
+
+@media (min-width:992px) {
+  .sidebar-mobile {
+    display: none;
   }
 }
