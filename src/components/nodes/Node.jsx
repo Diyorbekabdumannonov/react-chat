@@ -31,6 +31,7 @@ export default function Node() {
             date: date
         }
         setHasValue('d-none')
+        e.target.children[0].value.trim()
         if (message !== '') {
             // console.warn(db.collection('react-chat').add({ name: e.target.children[0].value }));
             showMessage(message, date);
