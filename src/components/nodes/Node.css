@@ -8,6 +8,7 @@
     margin-left: auto;
     height: 91vh;
     overflow-y: auto;
+    padding-bottom: 40px !important;
 }
 
 #node::-webkit-scrollbar {
@@ -33,7 +34,6 @@
     cursor: pointer;
 }
 
-
 .input {
     width: 80vw;
     outline: none;
@@ -45,6 +45,11 @@
     }
 }
 
-.node{
+.parent {
+    height: -webkit-fill-available;
+}
+
+.node {
     overflow: hidden;
+    height: -webkit-fill-available;
 }
