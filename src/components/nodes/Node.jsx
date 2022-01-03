@@ -5,8 +5,6 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import { Link } from '@material-ui/core';
 
 export default function Node() {
-    const sub = localStorage.getItem('current');
-    console.log(sub)
     const [hasValue, setHasValue] = useState('d-none');
     const handleChange = (e) => {
         setHasValue('d-inline-block px-2 bg-dark');
@@ -15,7 +13,7 @@ export default function Node() {
         const div = document.createElement('div');
         div.innerHTML = `
         <div class="align-items-center d-flex justify-content-end m-2 ms-auto w-auto"> 
-        <img src='../asset/home.png'>
+        <img src="file:///C:/Users/Diyorbek/Pictures/Cars/Kia.jpg">
         <div class="bg-dark box ms-2 p-2 rounded">
         <h3>${message}</h3>
         <span>${date}</span>
@@ -34,6 +32,7 @@ export default function Node() {
         }
         setHasValue('d-none')
         if (message !== '') {
+            // console.warn(db.collection('react-chat').add({ name: e.target.children[0].value }));
             showMessage(message, date);
         }
         e.target.children[0].value = ''
@@ -42,9 +41,9 @@ export default function Node() {
         <div className='position-relative w-100 node'>
             <div name='parent' className='parent'>
                 <div className="align-items-center bg-dark d-flex fs-3 ps-5 py-1">
-                    <Link href='http://localhost:3000/Home/Personal/menu' className="bg-transparent border-0 d-flex me-3 text-white">
+                    <Link href='/Home/Personal/menu' className="bg-transparent border-0 d-flex me-3 text-white">
                         <ArrowBackIcon /></Link>
-                    <h3>Personal</h3></div >
+                    <h3>{window.location.href.slice(27, 35)}</h3></div >
                 <div id="node" name="site" className="p-1">
                 </div>
                 <form onSubmit={submit} name='form' style={{ bottom: 0 }} className='w-100 position-absolute' >
