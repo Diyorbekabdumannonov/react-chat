@@ -3,7 +3,7 @@ import './Select.css'
 export default function Select() {
     return (
         <div className='none'>
-            <h3>Select Category to saving Node</h3>
+            <h3>Select Category to saving Note</h3>
         </div>
     )
 }

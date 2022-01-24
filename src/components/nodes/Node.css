@@ -4,6 +4,11 @@
     height: 30px;
 }
 
+.topbar {
+    min-height: 45px;
+    height: 8%;
+}
+
 #node {
     margin-left: auto;
     height: 91vh;
@@ -16,8 +21,27 @@
     height: 0.1px
 }
 
+.plus {
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 11px;
+    cursor: pointer;
+    border: none
+}
+
 #node::-webkit-scrollbar-button {
     background: transparent
+}
+
+.hover {
+    position: absolute;
+    background: #000;
+    display: none;
+    flex-direction: column;
+    padding: 5px 20px;
+    align-items: center;
+    box-shadow: -4px -4px 18px -8px;
+    justify-content: center;
 }
 
 #node::-webkit-scrollbar-track-piece {
@@ -52,4 +76,10 @@
 .node {
     overflow: hidden;
     height: -webkit-fill-available;
+}
+
+@media (min-width:1400px) {
+    .text {
+        font-size: 65px;
+    }
 }
