@@ -13,10 +13,10 @@ import Box from '@mui/material/Box'
 function App() {
     return (
         <>
-            <Box sx={{ bgcolor: 'text.primary' }}>
+            <Box>
                 <BrowserRouter >
                     <Routes >
-                        <Route path='Sign' element={<div style={{ height: '80px', width: '100vw' }}><Sign /></div>}></Route>
+                        <Route path='Sign' element={<Sign />}></Route>
                         <Route element={<>
                             <div className='sidebar'>
                                 <Categories />
@@ -26,34 +26,6 @@ function App() {
                             </div>
                         </>} path=''>
                         </Route>
-                        {/* <Route path={`/${firebase.firestore().collection('category').get().then(categories => {
-                            categories.docs.forEach(category => {
-                                const cat = category.data()
-                            })
-                        })}`}
-                            element={
-                                <>
-                                    <div className='sidebar' >
-                                        <Categories />
-                                        <SubCategory />
-                                    </div>
-                                    <div className='select' >
-                                        <Select />
-                                    </div>
-                                </>
-                            } >
-                        </Route> */}
-                        {/* <Route path={`/${firebase.firestore().collection('category').get().then(categories => {
-                            categories.docs.forEach(category => {
-                                category.data()
-                            })
-                        })}` + `
-                        /${firebase.firestore().collection('Subcategory').get().then(subs => {
-                            subs.docs().forEach(sub => {
-                                sub.data()
-                            })
-                        })}
-                        `} */}
                         <Route path="Home/Personal"
                             element={
                                 <>

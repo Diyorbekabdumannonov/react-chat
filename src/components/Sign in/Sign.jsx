@@ -1,48 +1,42 @@
-import React from './Sign.css'
+import { Close, Person } from '@material-ui/icons'
+import { Box, Button, Typography, TextField, Modal } from '@mui/material'
+import { height } from '@mui/system'
+import { useRef, useState } from 'react'
 
 export default function Sign() {
-
+    const [modalHide, modalShow] = useState('none')
+    const form = useRef()
+    const modalToggle = () => {
+        (modalHide == 'none') ? modalShow('block') : modalShow('none')
+    }
+    const formSubmit = () => {
+        modalToggle()
+    }
     return (
-        <>
-            <div class="align-items-center bg-dark d-flex justify-content-around navbar text-white">
-                <div class="d-flex">
-                    <h1>Welcome to Note App</h1>💬</div>
-                <button type="button" class="btn btn-lg btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modelId">Sign In</button></div>
-
-            <div className="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-                <div className="modal-dialog text-dark" role="document">
-                    <div className="modal-content">
-                        <div className="modal-header">
-                            <h5 className="modal-title">Create Account</h5>
-                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div className="modal-body">
-                            <div className="container-fluid d-flex flex-column">
-                                <label>Username:</label>
-                                <input type="text" placeholder='Username' className='bg-dark border-0 mt-3 px-3 py-1 rounded-pill text-white' style={{ outline: 'none' }} />
-                            </div>
-                            <div className="container-fluid mt-4 d-flex flex-column">
-                                <label>Password:</label>
-                                <input type="text" placeholder='Password' className='bg-dark border-0 mt-3 px-3 py-1 rounded-pill text-white' style={{ outline: 'none' }} />
-                            </div>
-                            <div className="container-fluid mt-4 d-flex flex-column">
-                                <label>Profile Photo</label>
-                                <input type="text" placeholder='Profile Photo url' className='bg-dark border-0 mt-3 px-3 py-1 rounded-pill text-white' style={{ outline: 'none' }} />
-                            </div>
-                        </div>
-                        <div className="modal-footer">
-                            <button type="button" className="btn btn-outline-secondary" data-bs-dismiss="modal" onClick={e => {
-                                e.target.parentElement.parentElement.children[1].children[0].children[1].value = '';
-                            }}>Cancel</button>
-                            <button type="button" onClick={e => {
-                                e.target.parentElement.parentElement.children[1].children[0].children[1].value = '';
-                            }} data-bs-dismiss='modal' className="btn btn-outline-success">Save</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </>
-
-
+        <Box style={{ background: 'linear-gradient(187deg, #062e42, #000)', height: '100vh' }}>
+            <Box display='flex' justifyContent="space-around" alignItems='center' paddingY="10px">
+                <Typography variant="h3" color="white">Welcome to Note App 💬</Typography>
+                <Button onClick={() => modalToggle()} type="button" color="primary" variant="outlined" data-bs-toggle="modal" data-bs-target="#modelId">Sign In</Button>
+            </Box>
+            <Box borderRadius="10px" display={modalHide} maxWidth="500px" marginX="auto" padding="16px" bgcolor="white">
+                <Close onClick={() => modalToggle()} style={{ float: "right", cursor: 'pointer' }} />
+                <Typography variant="h6" color="black" marginBottom="10px" justifyContent="center" display="flex" alignItems="center">
+                    <p>Create Account</p>
+                    <Person /></Typography>
+                <form ref={form} onSubmit={(e) => {
+                    e.preventDefault()
+                    formSubmit()
+                }} noValidate autoComplete='off'>
+                    <Typography marginBottom="10px">Username: </Typography>
+                    <TextField name="userName" label="Username" paddingY="0px" variant="outlined" fullWidth />
+                    <Typography marginY="10px">Password: </Typography>
+                    <TextField type="password" name="password" label="Password" paddingY="0px" variant="outlined" fullWidth />
+                    <Typography marginY="10px">Profile image: </Typography>
+                    <TextField name="photoUrl" label="Profile image" paddingY="0px" variant="outlined" fullWidth />
+                    <Button type="submit" variant="contained" fullWidth style={{ marginTop: '20px' }} color="success">Submit</Button>
+                </form>
+            </Box>
+            <Modal />
+        </Box>
     )
 }
