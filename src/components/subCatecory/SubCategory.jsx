@@ -7,33 +7,23 @@ import { useRef } from 'react'
 import firebase from '../../firebase'
 
 export default function SubCategory() {
-    const parent = React.createRef();
-
-    const showSub = e => {
-        const div = document.createElement('div');
-        const link = document.createElement('a')
-        link.href = `/Home/${e.name}`
-        link.className = "border text-decoration-none border-1 border-dark card2 d-flex py-1"
-        const h2 = document.createElement('h2')
-        h2.className = "fs-4 mb-0 px-3 text-white"
-        h2.innerText = e.name
-        link.appendChild(h2)
-        div.appendChild(link)
-        parent.current.appendChild(div)
-        console.log(div)
+    const showChat = e => {
+        return (
+            <div>
+                <Link href={`/Home/${e.name}`} className="border text-decoration-none border-1 border-dark card2 d-flex py-1">{e.name}</Link>
+            </div>
+        )
     }
-
-    // firebase.firestore().collection('Subcategory').get().then(subs => {
-    //     subs.docs.forEach(sub => {
-    //         showSub(sub.data())
-    //         console.log(sub.data())
-    //     })
-    // })
 
     return (
         <>
             <div className='overflow-auto scroll' style={{ height: '100vh' }}>
-                <div id='main' ref={parent}>
+                <div>
+                    {firebase.firestore().collection('chats').get().then(chats => {
+                        chats.docs.map(chat => {
+                            showChat(chat.data())
+                        })
+                    })}
                 </div>
             </div>
         </>
