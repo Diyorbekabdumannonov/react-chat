@@ -1,59 +1,57 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Categories from './components/categories/Categories';
-import Node from './components/nodes/Node';
+import Node from './components/note/Note';
 import SubCategory from './components/subCatecory/SubCategory';
 import Select from './components/select/Select';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import Sign from './components/signIn/Sign';
 import { useState } from 'react';
-import firebase from './firebase';
-import Box from '@mui/material/Box'
+import firebase from './firebase-config';
+import { Box } from '@mui/material'
+import { makeStyles } from '@mui/styles';
+import { maxWidth } from '@mui/system';
 
 function App() {
     return (
-        <Box>
-                <Categories />
-                <Select />
-            {/* <BrowserRouter >
+        <Box fontFamily='system-ui'>
+            <BrowserRouter >
                 <Routes >
                     <Route path='Sign' element={<Sign />}></Route>
                     <Route element={<>
-                        <div className='sidebar'>
-                            <Categories />
-                        </div>
-                        <div className='select'>
+                        <Box display="flex" alignItems="start">
+                            <Box width="20%" borderRight="2px solid #000" paddingRight='5px' height="100vh">
+                                <Categories />
+                            </Box>
                             <Select />
-                        </div>
+                        </Box>
                     </>} path='/'>
                     </Route>
-                    <Route path="Home/Personal"
-                        element={
-                            <>
-                                <div className='sidebar2' >
-                                    <Categories />
-                                    <SubCategory />
-                                </div>
-                                <div className='w-100'>
-                                    <Node />
-                                </div>
-                            </>
-                        } >
-                    </Route>
-                    <Route path='/Home/All/menu'
-                        element={<>
-                            <div className='sidebar-mobile' >
+                    <Route element={<>
+                        <Box display="flex" alignItems="start">
+                            <Box width="20%" height="100vh" borderRight="2px solid #000" paddingRight='5px'>
                                 <Categories />
                                 <SubCategory />
-                            </div>
-                            <div className='rightbar-mobile' >
-                                <Select />
-                            </div>
-                        </>
-                        }
-                        component={< Categories />} > </Route>
+                            </Box>
+                            <Select />
+                        </Box>
+                    </>} path='/Home'>
+                    </Route>
+                    <Route path="/Home/Personal"
+                        element={
+                            <Box display="flex" alignItems="start">
+                                <Box width="20%" height="100vh" borderRight="2px solid #000" paddingRight='5px'>
+                                    <Categories />
+                                    <SubCategory />
+                                </Box>
+                                <Box width="80%">
+                                    <Node />
+                                </Box>
+                            </Box>
+                        } >
+                    </Route>
                 </Routes>
-            </BrowserRouter> */}
+            </BrowserRouter>
         </Box>
     );
 }
